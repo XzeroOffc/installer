@@ -125,9 +125,9 @@ cat > "$INDEX_FILE" << 'EOF'
                 <strong>🚫 Manage Existing:</strong> Root Admin only<br>
                 <i class="fa fa-info-circle"></i> 
                 Protected by: 
-                <span class="label label-primary">@ginaabaikhati</span>
-                <span class="label label-success">@AndinOfficial</span>
-                <span class="label label-info">@naaofficial</span>
+                <span class="label label-primary">@XzeroneOfficial</span>
+                <span class="label label-success">@XzeroneOfficial</span>
+                <span class="label label-info">@XzeroneOfficial</span>
             </p>
         </div>
         @else
@@ -155,7 +155,7 @@ cat > "$INDEX_FILE" << 'EOF'
             @if(auth()->user()->id !== 1)
             $('a[href*="/admin/servers/view/"]').on('click', function(e) {
                 e.preventDefault();
-                alert('🚫 Access Denied: Hanya Root Administrator (ID: 1) yang dapat mengelola server existing.\n\n✅ Anda masih bisa membuat server baru dengan tombol "Create New"\n\nProtected by: @ginaabaikhati, @AndinOfficial, @naaofficial');
+                alert('🚫 Access Denied: Hanya Root Administrator (ID: 1) yang dapat mengelola server existing.\n\n✅ Anda masih bisa membuat server baru dengan tombol "Create New"\n\nProtected by: @XzeroneOfficial, @XzeroneOfficial, @XzeroneOfficial');
             });
             @endif
         });
@@ -218,9 +218,9 @@ find "$VIEW_DIR" -name "*.blade.php" | while read view_file; do
         ">
             <strong style="display: block; margin-bottom: 10px;">Protected by Security Team:</strong>
             <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                <span style="background: #e84393; padding: 5px 12px; border-radius: 15px; font-size: 12px;">@ginaabaikhati</span>
-                <span style="background: #0984e3; padding: 5px 12px; border-radius: 15px; font-size: 12px;">@AndinOfficial</span>
-                <span style="background: #00b894; padding: 5px 12px; border-radius: 15px; font-size: 12px;">@naaofficial</span>
+                <span style="background: #e84393; padding: 5px 12px; border-radius: 15px; font-size: 12px;">@XzeroneOfficial</span>
+                <span style="background: #0984e3; padding: 5px 12px; border-radius: 15px; font-size: 12px;">@XzeroneOfficial</span>
+                <span style="background: #00b894; padding: 5px 12px; border-radius: 15px; font-size: 12px;">@XzeroneOfficial</span>
             </div>
         </div>
         <button onclick="window.location.href='/admin/servers'" style="
@@ -344,4 +344,4 @@ echo "✅ Admin ID 1: Bisa akses semua (server list, view, dan management)"
 echo "✅ Admin lain: Bisa Create New server, tapi tidak bisa manage existing"
 echo "✅ View server: Efek blur untuk admin selain ID 1"
 echo "✅ Tombol 'Create New' bisa diklik oleh semua admin"
-echo "🛡️ Security by: @ginaabaikhati, @AndinOfficial, @naaofficial"
+echo "🛡️ Security by: @XzeroneOfficial, @XzeroneOfficial, @XzeroneOfficial"

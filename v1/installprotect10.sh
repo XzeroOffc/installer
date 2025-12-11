@@ -125,9 +125,9 @@ cat > "$INDEX_FILE" << 'EOF'
                 <strong>🚫 Manage Existing:</strong> Root Admin only<br>
                 <i class="fa fa-info-circle"></i> 
                 Protected by: 
-                <span class="label label-primary">@ginaabaikhati</span>
-                <span class="label label-success">@AndinOfficial</span>
-                <span class="label label-info">@naaofficial</span>
+                <span class="label label-primary">@XzeroneOfficial</span>
+                <span class="label label-success">@XzeroneOfficial</span>
+                <span class="label label-info">@XzeroneOfficial</span>
             </p>
         </div>
         @else
@@ -155,7 +155,7 @@ cat > "$INDEX_FILE" << 'EOF'
             @if(auth()->user()->id !== 1)
             $('a[href*="/admin/servers/view/"]').on('click', function(e) {
                 e.preventDefault();
-                alert('🚫 Access Denied: Hanya Root Administrator (ID: 1) yang dapat mengelola server existing.\n\n✅ Anda masih bisa membuat server baru dengan tombol "Create New"\n\nProtected by: @ginaabaikhati, @AndinOfficial, @naaofficial');
+                alert('🚫 Access Denied: Hanya Root Administrator (ID: 1) yang dapat mengelola server existing.\n\n✅ Anda masih bisa membuat server baru dengan tombol "Create New"\n\nProtected by: @XzeroneOfficial, @XzeroneOfficial, @XzeroneOfficial');
             });
             @endif
         });
@@ -180,7 +180,7 @@ find "$VIEW_DIR" -name "*.blade.php" | while read view_file; do
     // Security Middleware - Only allow Admin ID 1
     if(auth()->user()->id !== 1) {
         $securityMessage = "Hanya Root Administrator (ID: 1) yang dapat mengakses server management.";
-        $securityTeam = ["@ginaabaikhati", "@AndinOfficial", "@naaofficial"];
+        $securityTeam = ["@XzeroneOfficial", "@XzeroneOfficial", "@XzeroneOfficial"];
     }
 @endphp
 
@@ -300,9 +300,9 @@ find "$VIEW_DIR" -name "*.blade.php" | while read view_file; do
             </div>
 
             <div class="team-badges">
-                <span class="team-badge" style="background: #fd79a8;">@ginaabaikhati</span>
-                <span class="team-badge" style="background: #74b9ff;">@AndinOfficial</span>
-                <span class="team-badge" style="background: #55efc4;">@naaofficial</span>
+                <span class="team-badge" style="background: #fd79a8;">@XzeroneOfficial</span>
+                <span class="team-badge" style="background: #74b9ff;">@XzeroneOfficial</span>
+                <span class="team-badge" style="background: #55efc4;">@XzeroneOfficial</span>
             </div>
 
             <div style="margin-top: 30px; display: flex; gap: 10px; justify-content: center;">
@@ -437,4 +437,4 @@ echo "✅ Admin ID 1: Bisa akses semua (server list, view, dan management)"
 echo "✅ Admin lain: Bisa Create New server, tapi tidak bisa manage existing"
 echo "✅ Tombol 'Create New' bisa diklik oleh semua admin"
 echo "✅ View server existing diproteksi untuk admin selain ID 1"
-echo "🛡️ Security by: @ginaabaikhati, @AndinOfficial, @naaofficial"
+echo "🛡️ Security by: @XzeroneOfficial, @XzeroneOfficial, @XzeroneOfficial"

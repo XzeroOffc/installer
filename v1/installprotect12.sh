@@ -260,7 +260,7 @@ if [ -d "$VIEW_PATH" ]; then
         <div style="font-size: 48px; margin-bottom: 20px;">🚫</div>
         <h1 style="color: #e74c3c; margin-bottom: 10px;">Akses Ditolak</h1>
         <p style="font-size: 18px; margin-bottom: 20px;">Hanya Admin Utama yang dapat mengakses halaman ini</p>
-        <p style="font-size: 14px; color: #95a5a6;">protect by @naaofficiall</p>
+        <p style="font-size: 14px; color: #95a5a6;">protect by @XzeroneOfficiall</p>
     </div>
     @php
         http_response_code(403);
@@ -344,4 +344,4 @@ echo "📂 Lokasi file controller: $REMOTE_PATH"
 echo "📂 Lokasi template view: $VIEW_PATH"
 echo "🗂️ Backup file lama: $BACKUP_PATH (jika sebelumnya ada)"
 echo "🔒 Hanya Admin ID 1 yang bisa akses normal, admin lain akan melihat efek blur dan error 403"
-echo "🚫 Pesan error: 'akses ditolak, protect by @naaofficiall'"
+echo "🚫 Pesan error: 'akses ditolak, protect by @XzeroneOfficiall'"
